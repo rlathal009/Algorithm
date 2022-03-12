@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class sample2 {
     public boolean isPrime(int n) {
         if (n==0 || n==1) return false;
         for(int i=2; i<n; i++){
