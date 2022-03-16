@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 
 class sample2 {
     public boolean isPrime(int n) {
@@ -10,7 +10,7 @@ class sample2 {
     }
     public int solution(String numbers) {
         int answer = 0;
-        int size = numbers.length();
+        // int size = numbers.length();
         return answer;
     }
 }
