@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class 완전탐색_1 {
     public int[] solution(int[] answers) {
         int[] score = {0,0,0};
         int len = answers.length;
