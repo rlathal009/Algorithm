@@ -1,4 +1,3 @@
-import java.util.*;
 
 class String_kakao {
     public int solution(String s) {
