@@ -13,23 +13,27 @@ class Solution {
     
     public int solution(int[][] jobs) {
         LinkedList<Job> waiting = new LinkedList<>();
-        PriorityQueue<Job> pq = new PriorityQueue<>(new Comparator<Job>(){
-            @Override
-            public int compare(Job j1, Job j2) {
-                return j1.workingTime - j2.workingTime;
-            }
-        });
+  
+        PriorityQueue<Job> pq = new PriorityQueue<>((o1, o2) -> o1.workingTime - o2.workingTime);
+        
+        // PriorityQueue<Job> pq = new PriorityQueue<>(new Comparator<Job>(){
+        //     @Override
+        //     public int compare(Job j1, Job j2) {
+        //         return j1.workingTime - j2.workingTime;
+        //     }
+        // });
         
         for(int[] job : jobs) {
             waiting.offer(new Job(job[0], job[1]));
         }
         
-        Collections.sort(waiting, new Comparator<Job>(){
-            @Override
-            public int compare(Job j1, Job j2) {
-                return j1.requestTime - j2.requestTime;
-            }
-        });
+        Collections.sort(waiting, (o1, o2) -> o1.requestTime - o2.requestTime);
+        // Collections.sort(waiting, new Comparator<Job>(){
+        //     @Override
+        //     public int compare(Job j1, Job j2) {
+        //         return j1.requestTime - j2.requestTime;
+        //     }
+        // });
         
         int answer = 0;
         int cnt = 0;
