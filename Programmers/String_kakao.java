@@ -19,6 +19,7 @@ class String_kakao {
             }
             result.append(zipStr);
             answer = Math.min(answer, result.length());
+
         }
         
         return answer;
