@@ -27,8 +27,8 @@ class Solution {
             }
         }
         
-        Collections.sort(list1);
-        Collections.sort(list2);
+        // Collections.sort(list1);
+        // Collections.sort(list2);
         
         for(String s : list1) {
             if(list2.remove(s)){
